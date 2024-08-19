@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Build') {
             steps {
-                        powershell 'gradle clean build'   
+                        powershell 'gradle build'   
             }
         }
         stage('Test') {
