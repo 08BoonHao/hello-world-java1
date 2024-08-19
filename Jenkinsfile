@@ -14,9 +14,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                
-                        powershell 'gradle test'
-                  
+                        powershell 'gradle test'             
             }
         }
         stage('Deploy') {
